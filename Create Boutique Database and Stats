@@ -1,0 +1,26 @@
+--Create a Boutique Database
+
+CREATE TABLE Trendy_Boutique (id INTEGER PRIMARY KEY, Name TEXT, Size TEXT, Quantity INTEGER, Price INTEGER); 
+
+INSERT INTO Trendy_Boutique VALUES 
+
+(1, "Blouse", "S", 3, 10.00),
+(2, "T-shirt", "S", 5, 10.00), 
+(3, "Tank top", "S", 1, 5.00), 
+(4, "Skirt", "S", 7, 20.00), 
+(5, "Pants", "S", 10, 25.00),
+(6, "V-neck Shirt", "M", 15, 10.00), 
+(7, "Jumpsuit", "M", 25, 20.00), 
+(8, "T-shirt", "M", 30, 10.00),
+(9, "Skirt", "M", 1, 20.00), 
+(10, "Pants", "M", 30, 25.00), 
+(11, "T-Shirt", "L", 12, 10.00), 
+(12, "Blouse", "L", 15, 10.00), 
+(13, "Crop Top", "L", 20, 10.00), 
+(14, "Skirt", "L", 30, 20.00), 
+(15, "Pants", "L", 4, 25.00); 
+
+--Display the database ordered by price. 
+
+SELECT * From Trendy_Boutique ORDER BY Price;
+SELECT Sum(Price) FROM Trendy_Boutique; 
